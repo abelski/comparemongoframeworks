@@ -34,8 +34,12 @@ public class MongoFindAllTest {
         mongoTemplate = new MongoTemplate(new Mongo(), DB_NAME);
         morphia = new Morphia().createDatastore(mongoClient, DB_NAME);
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 10000; i++) {
             mongoTemplate.insert(new TestFind());
+        }
+
+        for (int i = 0; i < 10000; i++) {
+            morphia.save(new by.abelski.domain.morphia.TestFind());
         }
     }
 

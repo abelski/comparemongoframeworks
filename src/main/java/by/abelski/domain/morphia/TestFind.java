@@ -6,7 +6,7 @@ import org.mongodb.morphia.annotations.Id;
 /**
  * @author Artur Belski
  */
-@Entity("test1")
+@Entity("test1s")
 public class TestFind {
     @Id
     private String id;

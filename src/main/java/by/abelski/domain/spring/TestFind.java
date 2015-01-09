@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 /**
  * @author Artur Belski
  */
-@Document(collection = "test1")
+@Document(collection = "test1m")
 public class TestFind {
     @Id
     private String id;
