@@ -1,15 +1,16 @@
 package by.abelski;
 
-import by.abelski.domain.spring.Test;
 import by.abelski.domain.spring.TestFind;
-import com.mongodb.*;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.Mongo;
+import com.mongodb.MongoClient;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Morphia;
 import org.openjdk.jmh.annotations.*;
 import org.springframework.data.mongodb.core.MongoTemplate;
 
 import java.net.UnknownHostException;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -17,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  */
 @State(Scope.Thread)
 public class MongoFindAllTest {
-    public static final String DB_NAME = "test1";
+    public static final String DB_NAME = "test";
     public static final String TEST_COLLECTION = "test1";
     private static DB db;
     private static DBCollection collection;
@@ -31,6 +32,9 @@ public class MongoFindAllTest {
         db = mongoClient.getDB(DB_NAME);
         collection = db.getCollection(TEST_COLLECTION);
         collection.drop();
+        db.getCollection("test1m").drop();
+        db.getCollection("test1s").drop();
+
         mongoTemplate = new MongoTemplate(new Mongo(), DB_NAME);
         morphia = new Morphia().createDatastore(mongoClient, DB_NAME);
 
@@ -44,22 +48,16 @@ public class MongoFindAllTest {
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.SampleTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void findUseDriver() {
         collection.find();
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.SampleTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void findUseSpringData() {
         mongoTemplate.findAll(TestFind.class);
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.SampleTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void findUseMorphia() {
         morphia.find(by.abelski.domain.morphia.TestFind.class);
     }
