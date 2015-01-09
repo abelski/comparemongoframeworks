@@ -1,0 +1,1494 @@
+# JMH 1.4.1 (released 15 days ago)
+# VM invoker: C:\Program Files\Java\jdk1.7.0_71\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: by.abelski.MongoFindAllTest.findUseDriver
+
+# Run progress: 0,00% complete, ETA 00:20:00
+# Fork: 1 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 1:52:18 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+871830,331 ops/s
+# Warmup Iteration   2: 7205252,302 ops/s
+# Warmup Iteration   3: 15835473,137 ops/s
+# Warmup Iteration   4: 16008385,088 ops/s
+# Warmup Iteration   5: 15675972,916 ops/s
+# Warmup Iteration   6: 15302743,145 ops/s
+# Warmup Iteration   7: 12691273,247 ops/s
+# Warmup Iteration   8: 16037690,522 ops/s
+# Warmup Iteration   9: 14488720,229 ops/s
+# Warmup Iteration  10: 15396513,748 ops/s
+# Warmup Iteration  11: 13936595,878 ops/s
+# Warmup Iteration  12: 14706764,041 ops/s
+# Warmup Iteration  13: 13290818,821 ops/s
+# Warmup Iteration  14: 15107045,060 ops/s
+# Warmup Iteration  15: 15320014,015 ops/s
+# Warmup Iteration  16: 15158145,865 ops/s
+# Warmup Iteration  17: 15649433,540 ops/s
+# Warmup Iteration  18: 15797230,123 ops/s
+# Warmup Iteration  19: 16090714,621 ops/s
+# Warmup Iteration  20: 16227111,373 ops/s
+Iteration   1: 16032193,401 ops/s
+Iteration   2: 15671380,895 ops/s
+Iteration   3: 15422392,295 ops/s
+Iteration   4: 15128129,505 ops/s
+Iteration   5: 15499799,038 ops/s
+Iteration   6: 16117271,175 ops/s
+Iteration   7: 16474404,859 ops/s
+Iteration   8: 16271933,400 ops/s
+Iteration   9: 16119555,486 ops/s
+Iteration  10: 15539670,031 ops/s
+Iteration  11: 16175664,525 ops/s
+Iteration  12: 16194932,193 ops/s
+Iteration  13: 14980743,348 ops/s
+Iteration  14: 16165797,535 ops/s
+Iteration  15: 15559968,240 ops/s
+Iteration  16: 16175735,200 ops/s
+Iteration  17: 16236107,519 ops/s
+Iteration  18: 16027795,539 ops/s
+Iteration  19: 16025399,117 ops/s
+Iteration  20: 16148717,994 ops/s
+
+# Run progress: 3,33% complete, ETA 00:23:13
+# Fork: 2 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 1:53:06 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+809667,689 ops/s
+# Warmup Iteration   2: 10096661,432 ops/s
+# Warmup Iteration   3: 15790032,762 ops/s
+# Warmup Iteration   4: 15877732,332 ops/s
+# Warmup Iteration   5: 16073241,775 ops/s
+# Warmup Iteration   6: 16147380,671 ops/s
+# Warmup Iteration   7: 15964630,227 ops/s
+# Warmup Iteration   8: 15937048,208 ops/s
+# Warmup Iteration   9: 16096694,537 ops/s
+# Warmup Iteration  10: 15993770,130 ops/s
+# Warmup Iteration  11: 16198084,388 ops/s
+# Warmup Iteration  12: 16119635,022 ops/s
+# Warmup Iteration  13: 16298191,860 ops/s
+# Warmup Iteration  14: 16215362,337 ops/s
+# Warmup Iteration  15: 16228831,807 ops/s
+# Warmup Iteration  16: 16306131,316 ops/s
+# Warmup Iteration  17: 16344759,802 ops/s
+# Warmup Iteration  18: 16127659,831 ops/s
+# Warmup Iteration  19: 16048176,782 ops/s
+# Warmup Iteration  20: 16157749,383 ops/s
+Iteration   1: 16327476,397 ops/s
+Iteration   2: 16253334,321 ops/s
+Iteration   3: 15981504,843 ops/s
+Iteration   4: 16275461,342 ops/s
+Iteration   5: 15951569,074 ops/s
+Iteration   6: 16062359,639 ops/s
+Iteration   7: 16337264,777 ops/s
+Iteration   8: 16214295,206 ops/s
+Iteration   9: 16310942,426 ops/s
+Iteration  10: 16272113,110 ops/s
+Iteration  11: 16577080,963 ops/s
+Iteration  12: 16105253,247 ops/s
+Iteration  13: 15971950,415 ops/s
+Iteration  14: 16412414,896 ops/s
+Iteration  15: 16293705,620 ops/s
+Iteration  16: 16145966,895 ops/s
+Iteration  17: 16259454,660 ops/s
+Iteration  18: 16048691,540 ops/s
+Iteration  19: 16089389,159 ops/s
+Iteration  20: 16305075,768 ops/s
+
+# Run progress: 6,67% complete, ETA 00:22:02
+# Fork: 3 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 1:53:52 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+819819,062 ops/s
+# Warmup Iteration   2: 11117830,121 ops/s
+# Warmup Iteration   3: 15843844,730 ops/s
+# Warmup Iteration   4: 15831379,462 ops/s
+# Warmup Iteration   5: 15889733,686 ops/s
+# Warmup Iteration   6: 15129226,109 ops/s
+# Warmup Iteration   7: 16126790,192 ops/s
+# Warmup Iteration   8: 16336355,476 ops/s
+# Warmup Iteration   9: 15842230,198 ops/s
+# Warmup Iteration  10: 15966898,460 ops/s
+# Warmup Iteration  11: 16091795,107 ops/s
+# Warmup Iteration  12: 16258390,184 ops/s
+# Warmup Iteration  13: 15956658,692 ops/s
+# Warmup Iteration  14: 16214479,537 ops/s
+# Warmup Iteration  15: 16234177,948 ops/s
+# Warmup Iteration  16: 15904850,579 ops/s
+# Warmup Iteration  17: 15328287,609 ops/s
+# Warmup Iteration  18: 15423593,877 ops/s
+# Warmup Iteration  19: 15540804,649 ops/s
+# Warmup Iteration  20: 15887988,187 ops/s
+Iteration   1: 15429176,191 ops/s
+Iteration   2: 15771046,086 ops/s
+Iteration   3: 15363359,891 ops/s
+Iteration   4: 15648637,322 ops/s
+Iteration   5: 15465598,569 ops/s
+Iteration   6: 15829232,272 ops/s
+Iteration   7: 15305738,664 ops/s
+Iteration   8: 15362446,654 ops/s
+Iteration   9: 15495870,391 ops/s
+Iteration  10: 15656119,641 ops/s
+Iteration  11: 15622569,135 ops/s
+Iteration  12: 15767979,863 ops/s
+Iteration  13: 15515118,382 ops/s
+Iteration  14: 15721382,036 ops/s
+Iteration  15: 15440876,132 ops/s
+Iteration  16: 15577908,366 ops/s
+Iteration  17: 15765248,534 ops/s
+Iteration  18: 15403722,670 ops/s
+Iteration  19: 15448686,762 ops/s
+Iteration  20: 15555378,924 ops/s
+
+# Run progress: 10,00% complete, ETA 00:21:00
+# Fork: 4 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 1:54:38 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+2360886,762 ops/s
+# Warmup Iteration   2: 14017502,289 ops/s
+# Warmup Iteration   3: 15990624,360 ops/s
+# Warmup Iteration   4: 15961977,299 ops/s
+# Warmup Iteration   5: 16059932,652 ops/s
+# Warmup Iteration   6: 16066668,151 ops/s
+# Warmup Iteration   7: 16000823,734 ops/s
+# Warmup Iteration   8: 16106197,255 ops/s
+# Warmup Iteration   9: 15717479,738 ops/s
+# Warmup Iteration  10: 15632105,222 ops/s
+# Warmup Iteration  11: 15987832,384 ops/s
+# Warmup Iteration  12: 15991022,191 ops/s
+# Warmup Iteration  13: 15994446,736 ops/s
+# Warmup Iteration  14: 15970676,412 ops/s
+# Warmup Iteration  15: 15923299,461 ops/s
+# Warmup Iteration  16: 15556428,648 ops/s
+# Warmup Iteration  17: 15918052,378 ops/s
+# Warmup Iteration  18: 15779383,051 ops/s
+# Warmup Iteration  19: 15634698,948 ops/s
+# Warmup Iteration  20: 15886856,580 ops/s
+Iteration   1: 15950539,355 ops/s
+Iteration   2: 15997391,332 ops/s
+Iteration   3: 16011022,806 ops/s
+Iteration   4: 16080136,191 ops/s
+Iteration   5: 15929529,550 ops/s
+Iteration   6: 16188398,865 ops/s
+Iteration   7: 15815752,820 ops/s
+Iteration   8: 15164625,088 ops/s
+Iteration   9: 15778363,936 ops/s
+Iteration  10: 15990039,348 ops/s
+Iteration  11: 15914927,479 ops/s
+Iteration  12: 16068370,686 ops/s
+Iteration  13: 15949994,927 ops/s
+Iteration  14: 16039771,424 ops/s
+Iteration  15: 15791476,009 ops/s
+Iteration  16: 16074639,081 ops/s
+Iteration  17: 16121177,062 ops/s
+Iteration  18: 16086083,547 ops/s
+Iteration  19: 15852372,850 ops/s
+Iteration  20: 16026930,567 ops/s
+
+# Run progress: 13,33% complete, ETA 00:20:13
+# Fork: 5 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 1:55:24 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+789435,589 ops/s
+# Warmup Iteration   2: 7725533,058 ops/s
+# Warmup Iteration   3: 16067340,267 ops/s
+# Warmup Iteration   4: 16216747,856 ops/s
+# Warmup Iteration   5: 16037017,398 ops/s
+# Warmup Iteration   6: 16221883,168 ops/s
+# Warmup Iteration   7: 15977998,107 ops/s
+# Warmup Iteration   8: 15995172,196 ops/s
+# Warmup Iteration   9: 16092530,131 ops/s
+# Warmup Iteration  10: 16311754,158 ops/s
+# Warmup Iteration  11: 16061465,948 ops/s
+# Warmup Iteration  12: 16139604,223 ops/s
+# Warmup Iteration  13: 16066329,862 ops/s
+# Warmup Iteration  14: 16292206,387 ops/s
+# Warmup Iteration  15: 15941210,224 ops/s
+# Warmup Iteration  16: 16207075,542 ops/s
+# Warmup Iteration  17: 16539239,439 ops/s
+# Warmup Iteration  18: 16378545,765 ops/s
+# Warmup Iteration  19: 16054715,022 ops/s
+# Warmup Iteration  20: 16251758,033 ops/s
+Iteration   1: 16205006,371 ops/s
+Iteration   2: 16689703,116 ops/s
+Iteration   3: 15930748,961 ops/s
+Iteration   4: 16287387,862 ops/s
+Iteration   5: 16200975,598 ops/s
+Iteration   6: 16644925,734 ops/s
+Iteration   7: 16530310,953 ops/s
+Iteration   8: 16516089,389 ops/s
+Iteration   9: 16377941,856 ops/s
+Iteration  10: 16185063,491 ops/s
+Iteration  11: 16025092,645 ops/s
+Iteration  12: 14955433,304 ops/s
+Iteration  13: 16270634,403 ops/s
+Iteration  14: 16111697,653 ops/s
+Iteration  15: 16287110,709 ops/s
+Iteration  16: 16297508,539 ops/s
+Iteration  17: 16337339,709 ops/s
+Iteration  18: 16251926,790 ops/s
+Iteration  19: 16205126,286 ops/s
+Iteration  20: 16172303,746 ops/s
+
+# Run progress: 16,67% complete, ETA 00:19:33
+# Fork: 6 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 1:56:12 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+699731,151 ops/s
+# Warmup Iteration   2: 5587768,170 ops/s
+# Warmup Iteration   3: 13833814,240 ops/s
+# Warmup Iteration   4: 14448772,203 ops/s
+# Warmup Iteration   5: 14401775,047 ops/s
+# Warmup Iteration   6: 14110077,119 ops/s
+# Warmup Iteration   7: 14116517,434 ops/s
+# Warmup Iteration   8: 14114157,146 ops/s
+# Warmup Iteration   9: 13827644,023 ops/s
+# Warmup Iteration  10: 13169801,322 ops/s
+# Warmup Iteration  11: 14287870,135 ops/s
+# Warmup Iteration  12: 16033893,578 ops/s
+# Warmup Iteration  13: 16192134,139 ops/s
+# Warmup Iteration  14: 16099961,983 ops/s
+# Warmup Iteration  15: 16056088,343 ops/s
+# Warmup Iteration  16: 16017472,118 ops/s
+# Warmup Iteration  17: 16154297,479 ops/s
+# Warmup Iteration  18: 15988695,628 ops/s
+# Warmup Iteration  19: 16238714,358 ops/s
+# Warmup Iteration  20: 16069439,011 ops/s
+Iteration   1: 16036517,319 ops/s
+Iteration   2: 15965196,932 ops/s
+Iteration   3: 16197778,008 ops/s
+Iteration   4: 15787303,722 ops/s
+Iteration   5: 16046694,186 ops/s
+Iteration   6: 16015860,223 ops/s
+Iteration   7: 15947286,218 ops/s
+Iteration   8: 16043998,248 ops/s
+Iteration   9: 16047516,479 ops/s
+Iteration  10: 15705283,751 ops/s
+Iteration  11: 16138319,202 ops/s
+Iteration  12: 15858431,737 ops/s
+Iteration  13: 14960733,882 ops/s
+Iteration  14: 14906615,900 ops/s
+Iteration  15: 15872682,791 ops/s
+Iteration  16: 14389079,965 ops/s
+Iteration  17: 14558877,767 ops/s
+Iteration  18: 15279606,854 ops/s
+Iteration  19: 14085967,023 ops/s
+Iteration  20: 14831758,059 ops/s
+
+# Run progress: 20,00% complete, ETA 00:18:49
+# Fork: 7 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 1:57:00 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+712677,260 ops/s
+# Warmup Iteration   2: 3569184,419 ops/s
+# Warmup Iteration   3: 15313652,051 ops/s
+# Warmup Iteration   4: 15951433,363 ops/s
+# Warmup Iteration   5: 15536751,087 ops/s
+# Warmup Iteration   6: 15703214,927 ops/s
+# Warmup Iteration   7: 12101404,930 ops/s
+# Warmup Iteration   8: 13134286,726 ops/s
+# Warmup Iteration   9: 13812332,024 ops/s
+# Warmup Iteration  10: 13695917,690 ops/s
+# Warmup Iteration  11: 13751866,489 ops/s
+# Warmup Iteration  12: 13099688,482 ops/s
+# Warmup Iteration  13: 13519772,173 ops/s
+# Warmup Iteration  14: 13361035,382 ops/s
+# Warmup Iteration  15: 13120457,066 ops/s
+# Warmup Iteration  16: 13458410,598 ops/s
+# Warmup Iteration  17: 13634072,750 ops/s
+# Warmup Iteration  18: 12685503,870 ops/s
+# Warmup Iteration  19: 13129702,136 ops/s
+# Warmup Iteration  20: 15881157,543 ops/s
+Iteration   1: 15890706,995 ops/s
+Iteration   2: 15629767,023 ops/s
+Iteration   3: 16354382,299 ops/s
+Iteration   4: 16002858,845 ops/s
+Iteration   5: 16042906,145 ops/s
+Iteration   6: 15899563,020 ops/s
+Iteration   7: 15962625,910 ops/s
+Iteration   8: 15192644,640 ops/s
+Iteration   9: 15531385,698 ops/s
+Iteration  10: 15439474,104 ops/s
+Iteration  11: 15240663,191 ops/s
+Iteration  12: 14822047,722 ops/s
+Iteration  13: 15879186,835 ops/s
+Iteration  14: 15234448,894 ops/s
+Iteration  15: 15687618,576 ops/s
+Iteration  16: 15755874,182 ops/s
+Iteration  17: 16045637,921 ops/s
+Iteration  18: 15779593,212 ops/s
+Iteration  19: 15972936,813 ops/s
+Iteration  20: 15892767,077 ops/s
+
+# Run progress: 23,33% complete, ETA 00:18:00
+# Fork: 8 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 1:57:47 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+861948,121 ops/s
+# Warmup Iteration   2: 5564744,712 ops/s
+# Warmup Iteration   3: 15464551,955 ops/s
+# Warmup Iteration   4: 15787343,665 ops/s
+# Warmup Iteration   5: 15897367,961 ops/s
+# Warmup Iteration   6: 15819995,865 ops/s
+# Warmup Iteration   7: 16105305,255 ops/s
+# Warmup Iteration   8: 15919893,483 ops/s
+# Warmup Iteration   9: 15905337,628 ops/s
+# Warmup Iteration  10: 15743955,409 ops/s
+# Warmup Iteration  11: 15911547,152 ops/s
+# Warmup Iteration  12: 15978466,183 ops/s
+# Warmup Iteration  13: 15910665,843 ops/s
+# Warmup Iteration  14: 15987934,862 ops/s
+# Warmup Iteration  15: 15894080,696 ops/s
+# Warmup Iteration  16: 16077988,649 ops/s
+# Warmup Iteration  17: 15876250,482 ops/s
+# Warmup Iteration  18: 16024449,286 ops/s
+# Warmup Iteration  19: 15893060,194 ops/s
+# Warmup Iteration  20: 15972993,813 ops/s
+Iteration   1: 15943943,558 ops/s
+Iteration   2: 15890797,005 ops/s
+Iteration   3: 15992085,482 ops/s
+Iteration   4: 15566693,622 ops/s
+Iteration   5: 16051587,180 ops/s
+Iteration   6: 16038143,840 ops/s
+Iteration   7: 15596975,911 ops/s
+Iteration   8: 15926007,632 ops/s
+Iteration   9: 15832049,027 ops/s
+Iteration  10: 16114343,275 ops/s
+Iteration  11: 16008298,675 ops/s
+Iteration  12: 15936896,719 ops/s
+Iteration  13: 15879535,586 ops/s
+Iteration  14: 15509770,553 ops/s
+Iteration  15: 15976493,210 ops/s
+Iteration  16: 16112350,268 ops/s
+Iteration  17: 15949308,784 ops/s
+Iteration  18: 15928672,047 ops/s
+Iteration  19: 15928563,898 ops/s
+Iteration  20: 15826099,726 ops/s
+
+# Run progress: 26,67% complete, ETA 00:17:13
+# Fork: 9 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 1:58:34 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+837600,840 ops/s
+# Warmup Iteration   2: 4626100,253 ops/s
+# Warmup Iteration   3: 15363736,504 ops/s
+# Warmup Iteration   4: 16443799,994 ops/s
+# Warmup Iteration   5: 16443910,473 ops/s
+# Warmup Iteration   6: 16166367,463 ops/s
+# Warmup Iteration   7: 16037365,810 ops/s
+# Warmup Iteration   8: 16051637,836 ops/s
+# Warmup Iteration   9: 16000062,454 ops/s
+# Warmup Iteration  10: 16181623,459 ops/s
+# Warmup Iteration  11: 16138948,876 ops/s
+# Warmup Iteration  12: 16310865,330 ops/s
+# Warmup Iteration  13: 16133955,245 ops/s
+# Warmup Iteration  14: 16409296,856 ops/s
+# Warmup Iteration  15: 16244211,784 ops/s
+# Warmup Iteration  16: 16051199,538 ops/s
+# Warmup Iteration  17: 16071926,755 ops/s
+# Warmup Iteration  18: 16032871,800 ops/s
+# Warmup Iteration  19: 16188975,350 ops/s
+# Warmup Iteration  20: 16380082,934 ops/s
+Iteration   1: 16010235,663 ops/s
+Iteration   2: 16218083,525 ops/s
+Iteration   3: 16025548,514 ops/s
+Iteration   4: 16104319,869 ops/s
+Iteration   5: 15884001,519 ops/s
+Iteration   6: 15995521,000 ops/s
+Iteration   7: 14461701,990 ops/s
+Iteration   8: 16099391,313 ops/s
+Iteration   9: 15141613,446 ops/s
+Iteration  10: 15813501,548 ops/s
+Iteration  11: 14153791,981 ops/s
+Iteration  12: 15464624,590 ops/s
+Iteration  13: 15699584,783 ops/s
+Iteration  14: 16077651,150 ops/s
+Iteration  15: 15985565,584 ops/s
+Iteration  16: 15977116,357 ops/s
+Iteration  17: 16013518,663 ops/s
+Iteration  18: 15743918,171 ops/s
+Iteration  19: 15928730,343 ops/s
+Iteration  20: 15838333,775 ops/s
+
+# Run progress: 30,00% complete, ETA 00:16:26
+# Fork: 10 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 1:59:21 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+837758,066 ops/s
+# Warmup Iteration   2: 14840458,961 ops/s
+# Warmup Iteration   3: 16017730,887 ops/s
+# Warmup Iteration   4: 15472203,364 ops/s
+# Warmup Iteration   5: 16183394,734 ops/s
+# Warmup Iteration   6: 16264078,608 ops/s
+# Warmup Iteration   7: 16316579,197 ops/s
+# Warmup Iteration   8: 16447339,919 ops/s
+# Warmup Iteration   9: 16022784,433 ops/s
+# Warmup Iteration  10: 15768302,555 ops/s
+# Warmup Iteration  11: 14919311,099 ops/s
+# Warmup Iteration  12: 15374454,985 ops/s
+# Warmup Iteration  13: 15715917,509 ops/s
+# Warmup Iteration  14: 15273967,809 ops/s
+# Warmup Iteration  15: 15817790,861 ops/s
+# Warmup Iteration  16: 16105396,153 ops/s
+# Warmup Iteration  17: 16015288,843 ops/s
+# Warmup Iteration  18: 15822080,335 ops/s
+# Warmup Iteration  19: 15853738,535 ops/s
+# Warmup Iteration  20: 15313621,962 ops/s
+Iteration   1: 16086382,393 ops/s
+Iteration   2: 14692223,682 ops/s
+Iteration   3: 15651724,818 ops/s
+Iteration   4: 15487767,770 ops/s
+Iteration   5: 16030674,562 ops/s
+Iteration   6: 15276527,237 ops/s
+Iteration   7: 15684488,766 ops/s
+Iteration   8: 15746192,913 ops/s
+Iteration   9: 15927845,550 ops/s
+Iteration  10: 15950201,297 ops/s
+Iteration  11: 16015423,794 ops/s
+Iteration  12: 15169054,772 ops/s
+Iteration  13: 11431698,762 ops/s
+Iteration  14: 16003373,391 ops/s
+Iteration  15: 15875037,763 ops/s
+Iteration  16: 16085373,559 ops/s
+Iteration  17: 15897754,989 ops/s
+Iteration  18: 15360184,616 ops/s
+Iteration  19: 15562084,822 ops/s
+Iteration  20: 16153624,404 ops/s
+
+
+Result: 15821442,346 ?(99.9%) 126400,382 ops/s [Average]
+  Statistics: (min, avg, max) = (11431698,762, 15821442,346, 16689703,116), stdev = 535187,133
+  Confidence interval (99.9%): [15695041,964, 15947842,728]
+
+
+# JMH 1.4.1 (released 15 days ago)
+# VM invoker: C:\Program Files\Java\jdk1.7.0_71\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: by.abelski.MongoFindAllTest.findUseMorphia
+
+# Run progress: 33,33% complete, ETA 00:15:39
+# Fork: 1 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:00:07 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+294618,219 ops/s
+# Warmup Iteration   2: 999474,605 ops/s
+# Warmup Iteration   3: 2779734,658 ops/s
+# Warmup Iteration   4: 2728054,418 ops/s
+# Warmup Iteration   5: 2878885,101 ops/s
+# Warmup Iteration   6: 2973344,029 ops/s
+# Warmup Iteration   7: 2901956,298 ops/s
+# Warmup Iteration   8: 2893623,256 ops/s
+# Warmup Iteration   9: 2904231,946 ops/s
+# Warmup Iteration  10: 2884745,917 ops/s
+# Warmup Iteration  11: 2900437,399 ops/s
+# Warmup Iteration  12: 2889446,227 ops/s
+# Warmup Iteration  13: 2860565,935 ops/s
+# Warmup Iteration  14: 2885034,841 ops/s
+# Warmup Iteration  15: 2876731,354 ops/s
+# Warmup Iteration  16: 2914655,509 ops/s
+# Warmup Iteration  17: 2697089,655 ops/s
+# Warmup Iteration  18: 2830781,125 ops/s
+# Warmup Iteration  19: 2878492,887 ops/s
+# Warmup Iteration  20: 2823493,681 ops/s
+Iteration   1: 2571394,881 ops/s
+Iteration   2: 2816976,555 ops/s
+Iteration   3: 2728854,700 ops/s
+Iteration   4: 2754395,329 ops/s
+Iteration   5: 2741062,326 ops/s
+Iteration   6: 2763856,836 ops/s
+Iteration   7: 2579380,011 ops/s
+Iteration   8: 2792865,376 ops/s
+Iteration   9: 2628102,290 ops/s
+Iteration  10: 2381238,580 ops/s
+Iteration  11: 2317176,326 ops/s
+Iteration  12: 2652640,905 ops/s
+Iteration  13: 2611193,100 ops/s
+Iteration  14: 2346363,115 ops/s
+Iteration  15: 2326461,506 ops/s
+Iteration  16: 2521623,592 ops/s
+Iteration  17: 2806406,438 ops/s
+Iteration  18: 2867765,186 ops/s
+Iteration  19: 2819408,152 ops/s
+Iteration  20: 2790732,554 ops/s
+
+# Run progress: 36,67% complete, ETA 00:14:49
+# Fork: 2 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:00:53 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+259607,235 ops/s
+# Warmup Iteration   2: 2295820,855 ops/s
+# Warmup Iteration   3: 2851219,438 ops/s
+# Warmup Iteration   4: 2811261,933 ops/s
+# Warmup Iteration   5: 2825950,531 ops/s
+# Warmup Iteration   6: 2891660,300 ops/s
+# Warmup Iteration   7: 2908667,923 ops/s
+# Warmup Iteration   8: 2376323,271 ops/s
+# Warmup Iteration   9: 2560424,090 ops/s
+# Warmup Iteration  10: 2715786,810 ops/s
+# Warmup Iteration  11: 2425319,444 ops/s
+# Warmup Iteration  12: 2676030,954 ops/s
+# Warmup Iteration  13: 2777777,792 ops/s
+# Warmup Iteration  14: 2759488,896 ops/s
+# Warmup Iteration  15: 2856822,434 ops/s
+# Warmup Iteration  16: 2879743,466 ops/s
+# Warmup Iteration  17: 2863171,959 ops/s
+# Warmup Iteration  18: 2817985,109 ops/s
+# Warmup Iteration  19: 2557578,350 ops/s
+# Warmup Iteration  20: 2388209,246 ops/s
+Iteration   1: 2721126,529 ops/s
+Iteration   2: 2852062,613 ops/s
+Iteration   3: 2653511,480 ops/s
+Iteration   4: 2324994,934 ops/s
+Iteration   5: 2766333,341 ops/s
+Iteration   6: 2831894,785 ops/s
+Iteration   7: 2808162,294 ops/s
+Iteration   8: 2784504,766 ops/s
+Iteration   9: 2839747,430 ops/s
+Iteration  10: 2721618,662 ops/s
+Iteration  11: 2877040,288 ops/s
+Iteration  12: 2849304,163 ops/s
+Iteration  13: 2869257,774 ops/s
+Iteration  14: 2867509,554 ops/s
+Iteration  15: 2373677,214 ops/s
+Iteration  16: 2358044,764 ops/s
+Iteration  17: 2797199,610 ops/s
+Iteration  18: 2452378,766 ops/s
+Iteration  19: 2493877,903 ops/s
+Iteration  20: 2885823,745 ops/s
+
+# Run progress: 40,00% complete, ETA 00:14:03
+# Fork: 3 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:01:40 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+215894,614 ops/s
+# Warmup Iteration   2: 2427252,623 ops/s
+# Warmup Iteration   3: 2763356,197 ops/s
+# Warmup Iteration   4: 2796677,728 ops/s
+# Warmup Iteration   5: 2804315,650 ops/s
+# Warmup Iteration   6: 2770792,174 ops/s
+# Warmup Iteration   7: 2760326,856 ops/s
+# Warmup Iteration   8: 2781829,449 ops/s
+# Warmup Iteration   9: 2782837,864 ops/s
+# Warmup Iteration  10: 2794757,684 ops/s
+# Warmup Iteration  11: 2792670,194 ops/s
+# Warmup Iteration  12: 2806545,958 ops/s
+# Warmup Iteration  13: 2687093,186 ops/s
+# Warmup Iteration  14: 2809359,550 ops/s
+# Warmup Iteration  15: 2723382,951 ops/s
+# Warmup Iteration  16: 2787496,304 ops/s
+# Warmup Iteration  17: 2816862,512 ops/s
+# Warmup Iteration  18: 2803219,278 ops/s
+# Warmup Iteration  19: 2806643,180 ops/s
+# Warmup Iteration  20: 2799546,574 ops/s
+Iteration   1: 2831751,163 ops/s
+Iteration   2: 2858440,442 ops/s
+Iteration   3: 2784812,339 ops/s
+Iteration   4: 2804507,056 ops/s
+Iteration   5: 2783910,710 ops/s
+Iteration   6: 2772985,987 ops/s
+Iteration   7: 2811131,626 ops/s
+Iteration   8: 2808908,447 ops/s
+Iteration   9: 2787010,498 ops/s
+Iteration  10: 2785443,171 ops/s
+Iteration  11: 2761380,061 ops/s
+Iteration  12: 2789175,432 ops/s
+Iteration  13: 2756099,209 ops/s
+Iteration  14: 2794787,774 ops/s
+Iteration  15: 2763158,289 ops/s
+Iteration  16: 2833703,901 ops/s
+Iteration  17: 2776111,142 ops/s
+Iteration  18: 2810362,980 ops/s
+Iteration  19: 2790718,614 ops/s
+Iteration  20: 2829425,390 ops/s
+
+# Run progress: 43,33% complete, ETA 00:13:16
+# Fork: 4 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:02:27 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+280791,807 ops/s
+# Warmup Iteration   2: 2308747,666 ops/s
+# Warmup Iteration   3: 2810842,870 ops/s
+# Warmup Iteration   4: 2743507,892 ops/s
+# Warmup Iteration   5: 2841267,960 ops/s
+# Warmup Iteration   6: 2881770,811 ops/s
+# Warmup Iteration   7: 2883218,848 ops/s
+# Warmup Iteration   8: 2886356,610 ops/s
+# Warmup Iteration   9: 2816265,660 ops/s
+# Warmup Iteration  10: 2826648,876 ops/s
+# Warmup Iteration  11: 2846156,508 ops/s
+# Warmup Iteration  12: 2855895,822 ops/s
+# Warmup Iteration  13: 2811170,925 ops/s
+# Warmup Iteration  14: 2938970,907 ops/s
+# Warmup Iteration  15: 2917357,519 ops/s
+# Warmup Iteration  16: 2847821,518 ops/s
+# Warmup Iteration  17: 2830636,698 ops/s
+# Warmup Iteration  18: 2840574,958 ops/s
+# Warmup Iteration  19: 2769009,086 ops/s
+# Warmup Iteration  20: 2845047,759 ops/s
+Iteration   1: 2834043,372 ops/s
+Iteration   2: 2841612,205 ops/s
+Iteration   3: 2843693,967 ops/s
+Iteration   4: 2789914,085 ops/s
+Iteration   5: 2607889,857 ops/s
+Iteration   6: 2833732,598 ops/s
+Iteration   7: 2869953,263 ops/s
+Iteration   8: 2879278,559 ops/s
+Iteration   9: 2848905,063 ops/s
+Iteration  10: 2894876,318 ops/s
+Iteration  11: 2876638,707 ops/s
+Iteration  12: 2889080,616 ops/s
+Iteration  13: 2904082,397 ops/s
+Iteration  14: 2928372,799 ops/s
+Iteration  15: 2922556,223 ops/s
+Iteration  16: 2939458,345 ops/s
+Iteration  17: 2893603,176 ops/s
+Iteration  18: 2913256,796 ops/s
+Iteration  19: 2889759,789 ops/s
+Iteration  20: 2898333,801 ops/s
+
+# Run progress: 46,67% complete, ETA 00:12:29
+# Fork: 5 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:03:13 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+306248,406 ops/s
+# Warmup Iteration   2: 1885469,216 ops/s
+# Warmup Iteration   3: 2882998,211 ops/s
+# Warmup Iteration   4: 2900230,692 ops/s
+# Warmup Iteration   5: 2888703,582 ops/s
+# Warmup Iteration   6: 2918024,809 ops/s
+# Warmup Iteration   7: 2910652,528 ops/s
+# Warmup Iteration   8: 2879644,066 ops/s
+# Warmup Iteration   9: 2901081,511 ops/s
+# Warmup Iteration  10: 2891590,696 ops/s
+# Warmup Iteration  11: 2904395,699 ops/s
+# Warmup Iteration  12: 2906363,940 ops/s
+# Warmup Iteration  13: 2825869,517 ops/s
+# Warmup Iteration  14: 2882209,154 ops/s
+# Warmup Iteration  15: 2932913,537 ops/s
+# Warmup Iteration  16: 2940408,047 ops/s
+# Warmup Iteration  17: 2922057,197 ops/s
+# Warmup Iteration  18: 2881622,638 ops/s
+# Warmup Iteration  19: 2896600,799 ops/s
+# Warmup Iteration  20: 2910149,102 ops/s
+Iteration   1: 2886862,040 ops/s
+Iteration   2: 2926805,680 ops/s
+Iteration   3: 2921905,834 ops/s
+Iteration   4: 2877230,735 ops/s
+Iteration   5: 2875528,100 ops/s
+Iteration   6: 2896367,592 ops/s
+Iteration   7: 2921831,303 ops/s
+Iteration   8: 2909410,570 ops/s
+Iteration   9: 2882433,580 ops/s
+Iteration  10: 2853302,885 ops/s
+Iteration  11: 2859751,567 ops/s
+Iteration  12: 2881033,716 ops/s
+Iteration  13: 2910719,910 ops/s
+Iteration  14: 2888078,506 ops/s
+Iteration  15: 2924230,487 ops/s
+Iteration  16: 2889835,899 ops/s
+Iteration  17: 2963118,177 ops/s
+Iteration  18: 2903742,536 ops/s
+Iteration  19: 2917761,644 ops/s
+Iteration  20: 2839679,548 ops/s
+
+# Run progress: 50,00% complete, ETA 00:11:41
+# Fork: 6 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:03:59 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+320805,911 ops/s
+# Warmup Iteration   2: 1672353,885 ops/s
+# Warmup Iteration   3: 2919742,303 ops/s
+# Warmup Iteration   4: 2898728,765 ops/s
+# Warmup Iteration   5: 2879506,951 ops/s
+# Warmup Iteration   6: 2861996,842 ops/s
+# Warmup Iteration   7: 2799676,646 ops/s
+# Warmup Iteration   8: 2923682,727 ops/s
+# Warmup Iteration   9: 2898123,887 ops/s
+# Warmup Iteration  10: 2878459,398 ops/s
+# Warmup Iteration  11: 2877960,445 ops/s
+# Warmup Iteration  12: 2766393,588 ops/s
+# Warmup Iteration  13: 2839384,759 ops/s
+# Warmup Iteration  14: 2917706,050 ops/s
+# Warmup Iteration  15: 2922826,627 ops/s
+# Warmup Iteration  16: 2897712,036 ops/s
+# Warmup Iteration  17: 2957539,642 ops/s
+# Warmup Iteration  18: 2878942,992 ops/s
+# Warmup Iteration  19: 2874634,591 ops/s
+# Warmup Iteration  20: 2873415,619 ops/s
+Iteration   1: 2886668,064 ops/s
+Iteration   2: 2937129,579 ops/s
+Iteration   3: 2930540,577 ops/s
+Iteration   4: 2946468,449 ops/s
+Iteration   5: 2934267,054 ops/s
+Iteration   6: 2886044,626 ops/s
+Iteration   7: 2841592,810 ops/s
+Iteration   8: 2866237,380 ops/s
+Iteration   9: 2761528,144 ops/s
+Iteration  10: 2921068,998 ops/s
+Iteration  11: 2986341,483 ops/s
+Iteration  12: 2945136,353 ops/s
+Iteration  13: 2906037,288 ops/s
+Iteration  14: 2932473,424 ops/s
+Iteration  15: 2973139,673 ops/s
+Iteration  16: 2901907,469 ops/s
+Iteration  17: 2872297,335 ops/s
+Iteration  18: 2882838,659 ops/s
+Iteration  19: 2878953,116 ops/s
+Iteration  20: 2936144,453 ops/s
+
+# Run progress: 53,33% complete, ETA 00:10:54
+# Fork: 7 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:04:46 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+245261,118 ops/s
+# Warmup Iteration   2: 1547669,208 ops/s
+# Warmup Iteration   3: 2834297,129 ops/s
+# Warmup Iteration   4: 2808135,725 ops/s
+# Warmup Iteration   5: 2780298,896 ops/s
+# Warmup Iteration   6: 2837221,528 ops/s
+# Warmup Iteration   7: 2865141,955 ops/s
+# Warmup Iteration   8: 2844807,854 ops/s
+# Warmup Iteration   9: 2807545,341 ops/s
+# Warmup Iteration  10: 2847398,175 ops/s
+# Warmup Iteration  11: 2860272,103 ops/s
+# Warmup Iteration  12: 2831279,499 ops/s
+# Warmup Iteration  13: 2832348,524 ops/s
+# Warmup Iteration  14: 2854642,285 ops/s
+# Warmup Iteration  15: 2825634,077 ops/s
+# Warmup Iteration  16: 2902284,780 ops/s
+# Warmup Iteration  17: 2870898,048 ops/s
+# Warmup Iteration  18: 2857752,959 ops/s
+# Warmup Iteration  19: 2889818,860 ops/s
+# Warmup Iteration  20: 2897799,523 ops/s
+Iteration   1: 2888227,829 ops/s
+Iteration   2: 2876160,192 ops/s
+Iteration   3: 2886199,389 ops/s
+Iteration   4: 2887894,754 ops/s
+Iteration   5: 2801688,210 ops/s
+Iteration   6: 2792420,745 ops/s
+Iteration   7: 2832035,447 ops/s
+Iteration   8: 2857340,848 ops/s
+Iteration   9: 2875286,400 ops/s
+Iteration  10: 2849402,337 ops/s
+Iteration  11: 2877675,790 ops/s
+Iteration  12: 2815830,541 ops/s
+Iteration  13: 2871959,530 ops/s
+Iteration  14: 2834660,429 ops/s
+Iteration  15: 2807571,921 ops/s
+Iteration  16: 2870824,851 ops/s
+Iteration  17: 2840055,902 ops/s
+Iteration  18: 2851248,701 ops/s
+Iteration  19: 2852456,724 ops/s
+Iteration  20: 2849079,587 ops/s
+
+# Run progress: 56,67% complete, ETA 00:10:07
+# Fork: 8 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:05:32 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+287651,115 ops/s
+# Warmup Iteration   2: 1496622,905 ops/s
+# Warmup Iteration   3: 2842306,363 ops/s
+# Warmup Iteration   4: 2928593,952 ops/s
+# Warmup Iteration   5: 2925706,980 ops/s
+# Warmup Iteration   6: 2904896,041 ops/s
+# Warmup Iteration   7: 2911785,188 ops/s
+# Warmup Iteration   8: 2929205,203 ops/s
+# Warmup Iteration   9: 2895243,471 ops/s
+# Warmup Iteration  10: 2869277,659 ops/s
+# Warmup Iteration  11: 2902305,765 ops/s
+# Warmup Iteration  12: 2890022,219 ops/s
+# Warmup Iteration  13: 2901265,205 ops/s
+# Warmup Iteration  14: 2903241,096 ops/s
+# Warmup Iteration  15: 2916225,367 ops/s
+# Warmup Iteration  16: 2901425,317 ops/s
+# Warmup Iteration  17: 2871082,915 ops/s
+# Warmup Iteration  18: 2848682,266 ops/s
+# Warmup Iteration  19: 2860668,935 ops/s
+# Warmup Iteration  20: 2885620,054 ops/s
+Iteration   1: 2833005,247 ops/s
+Iteration   2: 2899506,857 ops/s
+Iteration   3: 2875243,399 ops/s
+Iteration   4: 2834879,982 ops/s
+Iteration   5: 2779120,158 ops/s
+Iteration   6: 2810167,198 ops/s
+Iteration   7: 2867618,112 ops/s
+Iteration   8: 2878127,199 ops/s
+Iteration   9: 2755796,724 ops/s
+Iteration  10: 2906466,086 ops/s
+Iteration  11: 2918454,229 ops/s
+Iteration  12: 2887573,872 ops/s
+Iteration  13: 2864126,384 ops/s
+Iteration  14: 2871991,692 ops/s
+Iteration  15: 2909665,948 ops/s
+Iteration  16: 2839458,749 ops/s
+Iteration  17: 2802839,928 ops/s
+Iteration  18: 2822597,931 ops/s
+Iteration  19: 2868234,702 ops/s
+Iteration  20: 2904193,179 ops/s
+
+# Run progress: 60,00% complete, ETA 00:09:20
+# Fork: 9 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:06:19 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+305116,305 ops/s
+# Warmup Iteration   2: 1461981,544 ops/s
+# Warmup Iteration   3: 2443625,165 ops/s
+# Warmup Iteration   4: 2804203,171 ops/s
+# Warmup Iteration   5: 2884176,455 ops/s
+# Warmup Iteration   6: 2718818,185 ops/s
+# Warmup Iteration   7: 2552601,770 ops/s
+# Warmup Iteration   8: 2790906,077 ops/s
+# Warmup Iteration   9: 2805556,789 ops/s
+# Warmup Iteration  10: 2837134,089 ops/s
+# Warmup Iteration  11: 2852410,202 ops/s
+# Warmup Iteration  12: 2919911,999 ops/s
+# Warmup Iteration  13: 2936170,552 ops/s
+# Warmup Iteration  14: 2752091,415 ops/s
+# Warmup Iteration  15: 2901243,032 ops/s
+# Warmup Iteration  16: 2883867,857 ops/s
+# Warmup Iteration  17: 2784292,477 ops/s
+# Warmup Iteration  18: 2821539,817 ops/s
+# Warmup Iteration  19: 2827928,986 ops/s
+# Warmup Iteration  20: 2780749,161 ops/s
+Iteration   1: 2815712,172 ops/s
+Iteration   2: 2791707,916 ops/s
+Iteration   3: 2798709,191 ops/s
+Iteration   4: 2831570,536 ops/s
+Iteration   5: 2845121,021 ops/s
+Iteration   6: 2870530,388 ops/s
+Iteration   7: 2473703,876 ops/s
+Iteration   8: 2766697,539 ops/s
+Iteration   9: 2770274,996 ops/s
+Iteration  10: 2773749,469 ops/s
+Iteration  11: 2886636,535 ops/s
+Iteration  12: 2858395,075 ops/s
+Iteration  13: 2672867,145 ops/s
+Iteration  14: 2608934,186 ops/s
+Iteration  15: 2370818,855 ops/s
+Iteration  16: 2755077,258 ops/s
+Iteration  17: 2801436,649 ops/s
+Iteration  18: 2771109,654 ops/s
+Iteration  19: 2784089,644 ops/s
+Iteration  20: 2798063,266 ops/s
+
+# Run progress: 63,33% complete, ETA 00:08:33
+# Fork: 10 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:07:05 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+264853,335 ops/s
+# Warmup Iteration   2: 1022879,292 ops/s
+# Warmup Iteration   3: 2682256,623 ops/s
+# Warmup Iteration   4: 2862826,486 ops/s
+# Warmup Iteration   5: 2877544,829 ops/s
+# Warmup Iteration   6: 2871428,483 ops/s
+# Warmup Iteration   7: 2865495,428 ops/s
+# Warmup Iteration   8: 2768299,078 ops/s
+# Warmup Iteration   9: 2564319,094 ops/s
+# Warmup Iteration  10: 2884851,919 ops/s
+# Warmup Iteration  11: 2921031,657 ops/s
+# Warmup Iteration  12: 2816369,282 ops/s
+# Warmup Iteration  13: 2848267,696 ops/s
+# Warmup Iteration  14: 2940224,290 ops/s
+# Warmup Iteration  15: 2810067,772 ops/s
+# Warmup Iteration  16: 2829696,410 ops/s
+# Warmup Iteration  17: 2804324,743 ops/s
+# Warmup Iteration  18: 2827679,334 ops/s
+# Warmup Iteration  19: 2847903,230 ops/s
+# Warmup Iteration  20: 2833229,747 ops/s
+Iteration   1: 2801754,621 ops/s
+Iteration   2: 2811879,363 ops/s
+Iteration   3: 2889319,659 ops/s
+Iteration   4: 2819495,954 ops/s
+Iteration   5: 2866517,132 ops/s
+Iteration   6: 2856666,365 ops/s
+Iteration   7: 2831378,117 ops/s
+Iteration   8: 2863211,209 ops/s
+Iteration   9: 2855838,452 ops/s
+Iteration  10: 2776460,785 ops/s
+Iteration  11: 2861622,888 ops/s
+Iteration  12: 2720461,621 ops/s
+Iteration  13: 2811666,371 ops/s
+Iteration  14: 2844164,645 ops/s
+Iteration  15: 2808175,683 ops/s
+Iteration  16: 2767325,642 ops/s
+Iteration  17: 2807856,280 ops/s
+Iteration  18: 2803037,899 ops/s
+Iteration  19: 2820982,076 ops/s
+Iteration  20: 2776873,534 ops/s
+
+
+Result: 2809111,306 ?(99.9%) 30124,203 ops/s [Average]
+  Statistics: (min, avg, max) = (2317176,326, 2809111,306, 2986341,483), stdev = 127547,761
+  Confidence interval (99.9%): [2778987,103, 2839235,508]
+
+
+# JMH 1.4.1 (released 15 days ago)
+# VM invoker: C:\Program Files\Java\jdk1.7.0_71\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: by.abelski.MongoFindAllTest.findUseSpringData
+
+# Run progress: 66,67% complete, ETA 00:07:47
+# Fork: 1 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:07:52 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+1,212 ops/s
+# Warmup Iteration   2: 2,063 ops/s
+# Warmup Iteration   3: 6,799 ops/s
+# Warmup Iteration   4: 12,367 ops/s
+# Warmup Iteration   5: 6,695 ops/s
+# Warmup Iteration   6: 15,792 ops/s
+# Warmup Iteration   7: 12,184 ops/s
+# Warmup Iteration   8: 12,347 ops/s
+# Warmup Iteration   9: 10,439 ops/s
+# Warmup Iteration  10: 13,842 ops/s
+# Warmup Iteration  11: 14,312 ops/s
+# Warmup Iteration  12: 10,741 ops/s
+# Warmup Iteration  13: 13,452 ops/s
+# Warmup Iteration  14: 16,461 ops/s
+# Warmup Iteration  15: 10,861 ops/s
+# Warmup Iteration  16: 12,265 ops/s
+# Warmup Iteration  17: 12,464 ops/s
+# Warmup Iteration  18: 16,540 ops/s
+# Warmup Iteration  19: 10,659 ops/s
+# Warmup Iteration  20: 12,950 ops/s
+Iteration   1: 15,652 ops/s
+Iteration   2: 11,051 ops/s
+Iteration   3: 15,351 ops/s
+Iteration   4: 12,502 ops/s
+Iteration   5: 13,642 ops/s
+Iteration   6: 15,771 ops/s
+Iteration   7: 11,493 ops/s
+Iteration   8: 15,718 ops/s
+Iteration   9: 15,491 ops/s
+Iteration  10: 10,885 ops/s
+Iteration  11: 15,711 ops/s
+Iteration  12: 2,205 ops/s
+Iteration  13: 14,242 ops/s
+Iteration  14: 11,468 ops/s
+Iteration  15: 13,486 ops/s
+Iteration  16: 11,442 ops/s
+Iteration  17: 14,764 ops/s
+Iteration  18: 15,356 ops/s
+Iteration  19: 10,344 ops/s
+Iteration  20: 12,662 ops/s
+
+# Run progress: 70,00% complete, ETA 00:07:04
+# Fork: 2 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:08:48 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+1,128 ops/s
+# Warmup Iteration   2: 4,732 ops/s
+# Warmup Iteration   3: 4,632 ops/s
+# Warmup Iteration   4: 6,993 ops/s
+# Warmup Iteration   5: 13,742 ops/s
+# Warmup Iteration   6: 15,380 ops/s
+# Warmup Iteration   7: 14,910 ops/s
+# Warmup Iteration   8: 11,590 ops/s
+# Warmup Iteration   9: 13,048 ops/s
+# Warmup Iteration  10: 13,629 ops/s
+# Warmup Iteration  11: 7,677 ops/s
+# Warmup Iteration  12: 16,746 ops/s
+# Warmup Iteration  13: 12,480 ops/s
+# Warmup Iteration  14: 13,169 ops/s
+# Warmup Iteration  15: 15,977 ops/s
+# Warmup Iteration  16: 12,074 ops/s
+# Warmup Iteration  17: 16,373 ops/s
+# Warmup Iteration  18: 11,716 ops/s
+# Warmup Iteration  19: 16,356 ops/s
+# Warmup Iteration  20: 1,904 ops/s
+Iteration   1: 15,632 ops/s
+Iteration   2: 12,252 ops/s
+Iteration   3: 15,632 ops/s
+Iteration   4: 12,282 ops/s
+Iteration   5: 15,457 ops/s
+Iteration   6: 15,553 ops/s
+Iteration   7: 15,754 ops/s
+Iteration   8: 15,545 ops/s
+Iteration   9: 10,720 ops/s
+Iteration  10: 4,627 ops/s
+Iteration  11: 15,787 ops/s
+Iteration  12: 15,933 ops/s
+Iteration  13: 11,100 ops/s
+Iteration  14: 15,932 ops/s
+Iteration  15: 15,529 ops/s
+Iteration  16: 10,839 ops/s
+Iteration  17: 15,757 ops/s
+Iteration  18: 15,457 ops/s
+Iteration  19: 11,230 ops/s
+Iteration  20: 15,442 ops/s
+
+# Run progress: 73,33% complete, ETA 00:06:20
+# Fork: 3 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:09:44 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+1,155 ops/s
+# Warmup Iteration   2: 1,927 ops/s
+# Warmup Iteration   3: 6,559 ops/s
+# Warmup Iteration   4: 13,691 ops/s
+# Warmup Iteration   5: 6,537 ops/s
+# Warmup Iteration   6: 16,596 ops/s
+# Warmup Iteration   7: 11,334 ops/s
+# Warmup Iteration   8: 16,595 ops/s
+# Warmup Iteration   9: 11,830 ops/s
+# Warmup Iteration  10: 12,825 ops/s
+# Warmup Iteration  11: 13,722 ops/s
+# Warmup Iteration  12: 15,762 ops/s
+# Warmup Iteration  13: 11,770 ops/s
+# Warmup Iteration  14: 13,782 ops/s
+# Warmup Iteration  15: 16,565 ops/s
+# Warmup Iteration  16: 11,473 ops/s
+# Warmup Iteration  17: 15,845 ops/s
+# Warmup Iteration  18: 12,494 ops/s
+# Warmup Iteration  19: 15,949 ops/s
+# Warmup Iteration  20: 12,326 ops/s
+Iteration   1: 15,771 ops/s
+Iteration   2: 12,160 ops/s
+Iteration   3: 15,844 ops/s
+Iteration   4: 12,552 ops/s
+Iteration   5: 15,776 ops/s
+Iteration   6: 12,488 ops/s
+Iteration   7: 3,341 ops/s
+Iteration   8: 14,559 ops/s
+Iteration   9: 8,633 ops/s
+Iteration  10: 10,508 ops/s
+Iteration  11: 14,218 ops/s
+Iteration  12: 12,368 ops/s
+Iteration  13: 15,618 ops/s
+Iteration  14: 12,638 ops/s
+Iteration  15: 9,534 ops/s
+Iteration  16: 12,928 ops/s
+Iteration  17: 11,649 ops/s
+Iteration  18: 15,634 ops/s
+Iteration  19: 15,613 ops/s
+Iteration  20: 11,182 ops/s
+
+# Run progress: 76,67% complete, ETA 00:05:35
+# Fork: 4 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:10:40 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+1,201 ops/s
+# Warmup Iteration   2: 2,019 ops/s
+# Warmup Iteration   3: 6,716 ops/s
+# Warmup Iteration   4: 13,767 ops/s
+# Warmup Iteration   5: 6,676 ops/s
+# Warmup Iteration   6: 14,527 ops/s
+# Warmup Iteration   7: 11,653 ops/s
+# Warmup Iteration   8: 10,812 ops/s
+# Warmup Iteration   9: 10,316 ops/s
+# Warmup Iteration  10: 11,767 ops/s
+# Warmup Iteration  11: 8,934 ops/s
+# Warmup Iteration  12: 14,007 ops/s
+# Warmup Iteration  13: 9,859 ops/s
+# Warmup Iteration  14: 14,982 ops/s
+# Warmup Iteration  15: 10,780 ops/s
+# Warmup Iteration  16: 14,484 ops/s
+# Warmup Iteration  17: 11,048 ops/s
+# Warmup Iteration  18: 15,393 ops/s
+# Warmup Iteration  19: 11,648 ops/s
+# Warmup Iteration  20: 14,916 ops/s
+Iteration   1: 14,305 ops/s
+Iteration   2: 9,810 ops/s
+Iteration   3: 11,252 ops/s
+Iteration   4: 11,818 ops/s
+Iteration   5: 14,868 ops/s
+Iteration   6: 10,962 ops/s
+Iteration   7: 12,615 ops/s
+Iteration   8: 14,724 ops/s
+Iteration   9: 14,623 ops/s
+Iteration  10: 13,847 ops/s
+Iteration  11: 14,569 ops/s
+Iteration  12: 11,437 ops/s
+Iteration  13: 13,236 ops/s
+Iteration  14: 2,475 ops/s
+Iteration  15: 14,464 ops/s
+Iteration  16: 13,883 ops/s
+Iteration  17: 13,649 ops/s
+Iteration  18: 10,354 ops/s
+Iteration  19: 12,781 ops/s
+Iteration  20: 13,710 ops/s
+
+# Run progress: 80,00% complete, ETA 00:04:49
+# Fork: 5 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:11:36 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+1,093 ops/s
+# Warmup Iteration   2: 3,933 ops/s
+# Warmup Iteration   3: 0,490 ops/s
+# Warmup Iteration   4: 5,541 ops/s
+# Warmup Iteration   5: 11,169 ops/s
+# Warmup Iteration   6: 6,119 ops/s
+# Warmup Iteration   7: 14,830 ops/s
+# Warmup Iteration   8: 12,064 ops/s
+# Warmup Iteration   9: 15,760 ops/s
+# Warmup Iteration  10: 11,630 ops/s
+# Warmup Iteration  11: 12,521 ops/s
+# Warmup Iteration  12: 14,607 ops/s
+# Warmup Iteration  13: 9,256 ops/s
+# Warmup Iteration  14: 13,415 ops/s
+# Warmup Iteration  15: 11,502 ops/s
+# Warmup Iteration  16: 14,409 ops/s
+# Warmup Iteration  17: 10,483 ops/s
+# Warmup Iteration  18: 15,713 ops/s
+# Warmup Iteration  19: 10,930 ops/s
+# Warmup Iteration  20: 15,460 ops/s
+Iteration   1: 10,317 ops/s
+Iteration   2: 14,888 ops/s
+Iteration   3: 12,188 ops/s
+Iteration   4: 15,440 ops/s
+Iteration   5: 12,257 ops/s
+Iteration   6: 14,368 ops/s
+Iteration   7: 14,597 ops/s
+Iteration   8: 10,906 ops/s
+Iteration   9: 14,701 ops/s
+Iteration  10: 14,737 ops/s
+Iteration  11: 11,414 ops/s
+Iteration  12: 13,710 ops/s
+Iteration  13: 14,736 ops/s
+Iteration  14: 13,540 ops/s
+Iteration  15: 9,327 ops/s
+Iteration  16: 12,535 ops/s
+Iteration  17: 14,334 ops/s
+Iteration  18: 1,817 ops/s
+Iteration  19: 14,417 ops/s
+Iteration  20: 11,822 ops/s
+
+# Run progress: 83,33% complete, ETA 00:04:03
+# Fork: 6 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:12:34 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+0,622 ops/s
+# Warmup Iteration   2: 1,843 ops/s
+# Warmup Iteration   3: 1,716 ops/s
+# Warmup Iteration   4: 6,038 ops/s
+# Warmup Iteration   5: 12,181 ops/s
+# Warmup Iteration   6: 6,219 ops/s
+# Warmup Iteration   7: 14,378 ops/s
+# Warmup Iteration   8: 12,826 ops/s
+# Warmup Iteration   9: 11,726 ops/s
+# Warmup Iteration  10: 11,945 ops/s
+# Warmup Iteration  11: 14,745 ops/s
+# Warmup Iteration  12: 12,534 ops/s
+# Warmup Iteration  13: 13,033 ops/s
+# Warmup Iteration  14: 16,955 ops/s
+# Warmup Iteration  15: 10,824 ops/s
+# Warmup Iteration  16: 16,596 ops/s
+# Warmup Iteration  17: 11,003 ops/s
+# Warmup Iteration  18: 15,689 ops/s
+# Warmup Iteration  19: 11,574 ops/s
+# Warmup Iteration  20: 15,912 ops/s
+Iteration   1: 12,164 ops/s
+Iteration   2: 16,510 ops/s
+Iteration   3: 11,464 ops/s
+Iteration   4: 15,992 ops/s
+Iteration   5: 11,761 ops/s
+Iteration   6: 15,714 ops/s
+Iteration   7: 15,612 ops/s
+Iteration   8: 15,565 ops/s
+Iteration   9: 15,574 ops/s
+Iteration  10: 0,349 ops/s
+Iteration  11: 15,796 ops/s
+Iteration  12: 15,883 ops/s
+Iteration  13: 10,876 ops/s
+Iteration  14: 15,220 ops/s
+Iteration  15: 12,891 ops/s
+Iteration  16: 14,546 ops/s
+Iteration  17: 13,883 ops/s
+Iteration  18: 13,995 ops/s
+Iteration  19: 15,530 ops/s
+Iteration  20: 10,906 ops/s
+
+# Run progress: 86,67% complete, ETA 00:03:15
+# Fork: 7 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:13:31 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+0,971 ops/s
+# Warmup Iteration   2: 1,358 ops/s
+# Warmup Iteration   3: 1,680 ops/s
+# Warmup Iteration   4: 5,298 ops/s
+# Warmup Iteration   5: 10,662 ops/s
+# Warmup Iteration   6: 5,570 ops/s
+# Warmup Iteration   7: 13,694 ops/s
+# Warmup Iteration   8: 13,851 ops/s
+# Warmup Iteration   9: 9,685 ops/s
+# Warmup Iteration  10: 15,914 ops/s
+# Warmup Iteration  11: 8,927 ops/s
+# Warmup Iteration  12: 9,887 ops/s
+# Warmup Iteration  13: 11,934 ops/s
+# Warmup Iteration  14: 10,788 ops/s
+# Warmup Iteration  15: 9,555 ops/s
+# Warmup Iteration  16: 14,997 ops/s
+# Warmup Iteration  17: 10,903 ops/s
+# Warmup Iteration  18: 14,845 ops/s
+# Warmup Iteration  19: 11,360 ops/s
+# Warmup Iteration  20: 14,874 ops/s
+Iteration   1: 11,740 ops/s
+Iteration   2: 14,972 ops/s
+Iteration   3: 14,662 ops/s
+Iteration   4: 10,491 ops/s
+Iteration   5: 14,530 ops/s
+Iteration   6: 14,732 ops/s
+Iteration   7: 10,685 ops/s
+Iteration   8: 15,287 ops/s
+Iteration   9: 13,803 ops/s
+Iteration  10: 10,515 ops/s
+Iteration  11: 14,363 ops/s
+Iteration  12: 14,656 ops/s
+Iteration  13: 11,086 ops/s
+Iteration  14: 3,229 ops/s
+Iteration  15: 14,450 ops/s
+Iteration  16: 13,829 ops/s
+Iteration  17: 11,497 ops/s
+Iteration  18: 14,458 ops/s
+Iteration  19: 14,888 ops/s
+Iteration  20: 11,315 ops/s
+
+# Run progress: 90,00% complete, ETA 00:02:27
+# Fork: 8 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:14:28 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+0,856 ops/s
+# Warmup Iteration   2: 0,803 ops/s
+# Warmup Iteration   3: 1,822 ops/s
+# Warmup Iteration   4: 6,201 ops/s
+# Warmup Iteration   5: 12,179 ops/s
+# Warmup Iteration   6: 6,083 ops/s
+# Warmup Iteration   7: 12,688 ops/s
+# Warmup Iteration   8: 13,856 ops/s
+# Warmup Iteration   9: 11,020 ops/s
+# Warmup Iteration  10: 15,654 ops/s
+# Warmup Iteration  11: 10,976 ops/s
+# Warmup Iteration  12: 14,852 ops/s
+# Warmup Iteration  13: 15,961 ops/s
+# Warmup Iteration  14: 10,686 ops/s
+# Warmup Iteration  15: 14,214 ops/s
+# Warmup Iteration  16: 11,156 ops/s
+# Warmup Iteration  17: 12,579 ops/s
+# Warmup Iteration  18: 11,970 ops/s
+# Warmup Iteration  19: 9,755 ops/s
+# Warmup Iteration  20: 11,406 ops/s
+Iteration   1: 10,544 ops/s
+Iteration   2: 10,033 ops/s
+Iteration   3: 12,750 ops/s
+Iteration   4: 13,935 ops/s
+Iteration   5: 13,756 ops/s
+Iteration   6: 9,743 ops/s
+Iteration   7: 14,691 ops/s
+Iteration   8: 14,254 ops/s
+Iteration   9: 10,529 ops/s
+Iteration  10: 14,342 ops/s
+Iteration  11: 14,450 ops/s
+Iteration  12: 0,656 ops/s
+Iteration  13: 13,786 ops/s
+Iteration  14: 14,291 ops/s
+Iteration  15: 11,178 ops/s
+Iteration  16: 13,888 ops/s
+Iteration  17: 14,426 ops/s
+Iteration  18: 14,414 ops/s
+Iteration  19: 14,573 ops/s
+Iteration  20: 14,273 ops/s
+
+# Run progress: 93,33% complete, ETA 00:01:39
+# Fork: 9 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:15:25 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+1,045 ops/s
+# Warmup Iteration   2: 1,773 ops/s
+# Warmup Iteration   3: 6,130 ops/s
+# Warmup Iteration   4: 13,156 ops/s
+# Warmup Iteration   5: 6,460 ops/s
+# Warmup Iteration   6: 14,881 ops/s
+# Warmup Iteration   7: 11,845 ops/s
+# Warmup Iteration   8: 14,950 ops/s
+# Warmup Iteration   9: 10,715 ops/s
+# Warmup Iteration  10: 15,636 ops/s
+# Warmup Iteration  11: 10,832 ops/s
+# Warmup Iteration  12: 12,382 ops/s
+# Warmup Iteration  13: 15,455 ops/s
+# Warmup Iteration  14: 10,668 ops/s
+# Warmup Iteration  15: 15,590 ops/s
+# Warmup Iteration  16: 10,860 ops/s
+# Warmup Iteration  17: 13,814 ops/s
+# Warmup Iteration  18: 13,624 ops/s
+# Warmup Iteration  19: 10,197 ops/s
+# Warmup Iteration  20: 12,921 ops/s
+Iteration   1: 12,881 ops/s
+Iteration   2: 13,663 ops/s
+Iteration   3: 10,832 ops/s
+Iteration   4: 15,403 ops/s
+Iteration   5: 14,315 ops/s
+Iteration   6: 14,502 ops/s
+Iteration   7: 14,613 ops/s
+Iteration   8: 11,325 ops/s
+Iteration   9: 14,882 ops/s
+Iteration  10: 2,188 ops/s
+Iteration  11: 15,233 ops/s
+Iteration  12: 14,936 ops/s
+Iteration  13: 10,565 ops/s
+Iteration  14: 14,620 ops/s
+Iteration  15: 11,733 ops/s
+Iteration  16: 14,476 ops/s
+Iteration  17: 10,724 ops/s
+Iteration  18: 14,771 ops/s
+Iteration  19: 15,316 ops/s
+Iteration  20: 11,219 ops/s
+
+# Run progress: 96,67% complete, ETA 00:00:49
+# Fork: 10 of 10
+# Warmup Iteration   1: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+янв 09, 2015 2:16:22 PM org.mongodb.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to org.mongodb.morphia.logging.jdk.JDKLoggerFactory
+0,781 ops/s
+# Warmup Iteration   2: 0,948 ops/s
+# Warmup Iteration   3: 1,953 ops/s
+# Warmup Iteration   4: 5,961 ops/s
+# Warmup Iteration   5: 11,971 ops/s
+# Warmup Iteration   6: 6,039 ops/s
+# Warmup Iteration   7: 14,563 ops/s
+# Warmup Iteration   8: 11,401 ops/s
+# Warmup Iteration   9: 14,825 ops/s
+# Warmup Iteration  10: 11,685 ops/s
+# Warmup Iteration  11: 12,932 ops/s
+# Warmup Iteration  12: 10,002 ops/s
+# Warmup Iteration  13: 12,653 ops/s
+# Warmup Iteration  14: 15,701 ops/s
+# Warmup Iteration  15: 10,886 ops/s
+# Warmup Iteration  16: 15,604 ops/s
+# Warmup Iteration  17: 11,129 ops/s
+# Warmup Iteration  18: 15,440 ops/s
+# Warmup Iteration  19: 11,291 ops/s
+# Warmup Iteration  20: 15,740 ops/s
+Iteration   1: 11,606 ops/s
+Iteration   2: 15,633 ops/s
+Iteration   3: 11,983 ops/s
+Iteration   4: 14,577 ops/s
+Iteration   5: 15,291 ops/s
+Iteration   6: 10,474 ops/s
+Iteration   7: 15,355 ops/s
+Iteration   8: 14,859 ops/s
+Iteration   9: 10,259 ops/s
+Iteration  10: 14,859 ops/s
+Iteration  11: 14,479 ops/s
+Iteration  12: 1,042 ops/s
+Iteration  13: 14,880 ops/s
+Iteration  14: 14,606 ops/s
+Iteration  15: 11,146 ops/s
+Iteration  16: 14,712 ops/s
+Iteration  17: 15,280 ops/s
+Iteration  18: 12,576 ops/s
+Iteration  19: 10,001 ops/s
+Iteration  20: 12,602 ops/s
+
+
+Result: 12,902 ?(99.9%) 0,731 ops/s [Average]
+  Statistics: (min, avg, max) = (0,349, 12,902, 16,510), stdev = 3,094
+  Confidence interval (99.9%): [12,172, 13,633]
+
+
+# Run complete. Total time: 00:25:01
+
+Benchmark                                  Mode  Samples         Score        Error  Units
+b.a.MongoFindAllTest.findUseDriver        thrpt      200  15821442,346 ? 126400,382  ops/s
+b.a.MongoFindAllTest.findUseMorphia       thrpt      200   2809111,306 ?  30124,203  ops/s
+b.a.MongoFindAllTest.findUseSpringData    thrpt      200        12,902 ?      0,731  ops/s

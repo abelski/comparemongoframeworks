@@ -40,22 +40,16 @@ public class MongoInsertTest {
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.SampleTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void insertUseDriver() {
         collection.insert(new BasicDBObject().append("name", "TEST").append("name1", "TEST1").append("name2", "TEST2").append("name3", "TEST3"));
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.SampleTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void insertUseSpringData() {
         mongoTemplate.insert(new Test());
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.SampleTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void insertUseMorphia() {
         morphia.save(new by.abelski.domain.morphia.Test());
     }
