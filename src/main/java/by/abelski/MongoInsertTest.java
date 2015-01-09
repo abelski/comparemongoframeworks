@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  * @author Artur Belski
  */
 @State(Scope.Thread)
-public class MongoWorkBenchmark {
+public class MongoInsertTest {
     public static final String DB_NAME = "test";
     public static final String TEST_COLLECTION = "test";
     private static DB db;
